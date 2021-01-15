@@ -1,0 +1,29 @@
+11:33:12 **** Build of configuration Debug for project pract1c ****
+cs-make all 
+'Building file: ../pract1c.asm'
+'Invoking: ARM Sourcery Windows GCC Assembler'
+arm-none-eabi-gcc -x assembler-with-cpp -Wall -Wa,-adhlns="pract1c.o.lst" -c -fmessage-length=0 -MMD -MP -MF"pract1c.d" -MT"pract1c.d" -mcpu=arm7tdmi -g3 -gdwarf-2 -o "pract1c.o" "../pract1c.asm"
+'Finished building: ../pract1c.asm'
+' '
+'Building target: pract1c.elf'
+'Invoking: ARM Sourcery Windows GCC C Linker'
+arm-none-eabi-gcc -T"../ld_script.ld" -nostartfiles -Wl,-Map,pract1c.map -mcpu=arm7tdmi -g3 -gdwarf-2 -o "pract1c.elf"  ./pract1c.o   
+'Finished building target: pract1c.elf'
+' '
+'Invoking: ARM Sourcery Windows GNU Create Flash Image'
+arm-none-eabi-objcopy -O binary pract1c.elf  "pract1c.hex"
+'Finished building: pract1c.hex'
+' '
+'Invoking: ARM Sourcery Windows GNU Create Listing'
+arm-none-eabi-objdump -h -S pract1c.elf > "pract1c.lst"
+'Finished building: pract1c.lst'
+' '
+'Invoking: ARM Sourcery Windows GNU Print Size'
+arm-none-eabi-size  --format=berkeley pract1c.elf
+   text	   data	    bss	    dec	    hex	filename
+     92	      8	      4	    104	     68	pract1c.elf
+'Finished building: pract1c.siz'
+' '
+
+11:33:12 Build Finished (took 634ms)
+

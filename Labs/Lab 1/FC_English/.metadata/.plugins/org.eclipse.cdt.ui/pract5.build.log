@@ -1,0 +1,11 @@
+17:06:10 **** Build of configuration Debug for project pract5 ****
+cs-make all 
+'Invoking: ARM Sourcery Windows GNU Print Size'
+arm-none-eabi-size  --format=berkeley pract5.elf
+   text	   data	    bss	    dec	    hex	filename
+   1236	     96	      4	   1336	    538	pract5.elf
+'Finished building: pract5.siz'
+' '
+
+17:06:11 Build Finished (took 247ms)
+

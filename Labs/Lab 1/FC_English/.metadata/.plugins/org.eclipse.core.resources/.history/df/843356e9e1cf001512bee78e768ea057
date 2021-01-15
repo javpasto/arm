@@ -1,0 +1,74 @@
+   1              	# 1 "../pract1c.asm"
+   1              	/*-----------------------------------------------------------------
+   0              	
+   0              	
+   0              	
+   2              	**
+   3              	**  File:
+   4              	**    pract1c.asm  4/02/2016
+   5              	**
+   6              	**    Introduction to Computers
+   7              	**    Dpto. de Arquitectura de Computadores y Automática
+   8              	**    Facultad de Informática. Universidad Complutense de Madrid
+   9              	**
+  10              	**  Goal:
+  11              	**    xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+  12              	**
+  13              	**  Design notes: C = |A| / |B|
+  14              	**
+  15              	**---------------------------------------------------------------*/
+  16              	
+  17              	.global start
+  18              	
+  19              	.data
+  20 0000 AAFFFFFF 	A: 		.word -86
+  21 0004 F8FFFFFF 	B: 		.word -8
+  22              	
+  23              	.bss
+  24 0000 00000000 	C:		.space 4
+  25              	
+  26              	.text
+  27 0000 48309FE5 	start:	LDR	R3, =A			@ R3 <---- Adress of A
+  28 0004 001093E5 			LDR	R1, [R3]		@ R1 <---- Value of A
+  29 0008 44309FE5 			LDR	R3, =B			@ R3 <---- Adress of B
+  30 000c 002093E5 			LDR	R2, [R3]		@ R2 <---- Value of B
+  31 0010 0040A0E3 			MOV R4, #0			@ R4 <---- Initialize the quotient to 0
+  32              	
+  33 0014 0050A0E3 			MOV	R5, #0			@ Initialize an auxiliary register to compute the opposite when needed
+  34              	
+  35 0018 000051E3 			CMP	R1, #0			@ If A < 0, then convert it to positive
+  36 001c 000000AA 			BGE	check_B
+  37 0020 011045E0 			SUB	R1, R5, R1		@ A = 0 - A (to obtain the opposite value)
+  38              	
+  39              	check_B:
+  40 0024 000052E3 			CMP R2, #0			@ If B < 0, then convert it to positive
+  41 0028 000000AA 			BGE	while
+  42 002c 022045E0 			SUB	R2, R5, R2		@ B = 0 - B (to obtain the opposite value)
+  43              	
+  44              	while:
+  45 0030 020051E1 	  		CMP	R1, R2			@ If A<B go to end_w
+  46 0034 020000DA 			BLE	end_w
+  47 0038 021041E0 			SUB R1, R1, R2		@ Compute A = A - B
+  48 003c 014084E2 			ADD R4, R4, #1		@ Compute C = C + 1
+  49 0040 FAFFFFEA 			B	while
+  50              	
+  51 0044 0C309FE5 	end_w:	LDR 	R3, =C
+  52 0048 004083E5 			STR 	R4, [R3]		@ Save the quotient of C
+  53 004c FEFFFFEA 			b	.
+  54 0050 00000000 			.end
+  54      04000000 
+  54      00000000 
+DEFINED SYMBOLS
+      ../pract1c.asm:27     .text:00000000 start
+      ../pract1c.asm:20     .data:00000000 A
+      ../pract1c.asm:21     .data:00000004 B
+      ../pract1c.asm:24     .bss:00000000 C
+      ../pract1c.asm:24     .bss:00000000 $d
+      ../pract1c.asm:27     .text:00000000 $a
+      ../pract1c.asm:39     .text:00000024 check_B
+      ../pract1c.asm:44     .text:00000030 while
+      ../pract1c.asm:51     .text:00000044 end_w
+      ../pract1c.asm:54     .text:00000050 $d
+                   .debug_aranges:0000000c $d
+
+NO UNDEFINED SYMBOLS

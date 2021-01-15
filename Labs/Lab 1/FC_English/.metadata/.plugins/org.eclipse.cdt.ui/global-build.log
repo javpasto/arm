@@ -1,0 +1,991 @@
+13:07:46 **** Build of configuration Debug for project pract1a ****
+cs-make all 
+'Building file: ../prac1a.asm'
+'Invoking: ARM Sourcery Windows GCC Assembler'
+arm-none-eabi-gcc -x assembler-with-cpp -Wall -Wa,-adhlns="prac1a.o.lst" -c -fmessage-length=0 -MMD -MP -MF"prac1a.d" -MT"prac1a.d" -mcpu=arm7tdmi -g3 -gdwarf-2 -o "prac1a.o" "../prac1a.asm"
+'Finished building: ../prac1a.asm'
+' '
+'Building target: pract1a.elf'
+'Invoking: ARM Sourcery Windows GCC C Linker'
+arm-none-eabi-gcc -T"../ld_script.ld" -nostartfiles -Wl,-Map,pract1a.map -mcpu=arm7tdmi -g3 -gdwarf-2 -o "pract1a.elf"  ./prac1a.o   
+'Finished building target: pract1a.elf'
+' '
+'Invoking: ARM Sourcery Windows GNU Create Flash Image'
+arm-none-eabi-objcopy -O binary pract1a.elf  "pract1a.hex"
+'Finished building: pract1a.hex'
+' '
+'Invoking: ARM Sourcery Windows GNU Create Listing'
+arm-none-eabi-objdump -h -S pract1a.elf > "pract1a.lst"
+'Finished building: pract1a.lst'
+' '
+'Invoking: ARM Sourcery Windows GNU Print Size'
+arm-none-eabi-size  --format=berkeley pract1a.elf
+   text	   data	    bss	    dec	    hex	filename
+     56	      8	      4	     68	     44	pract1a.elf
+'Finished building: pract1a.siz'
+' '
+13:48:23 **** Incremental Build of configuration Debug for project pract1a ****
+cs-make all 
+'Building file: ../prac1a.asm'
+'Invoking: ARM Sourcery Windows GCC Assembler'
+arm-none-eabi-gcc -x assembler-with-cpp -Wall -Wa,-adhlns="prac1a.o.lst" -c -fmessage-length=0 -MMD -MP -MF"prac1a.d" -MT"prac1a.d" -mcpu=arm7tdmi -g3 -gdwarf-2 -o "prac1a.o" "../prac1a.asm"
+'Finished building: ../prac1a.asm'
+' '
+'Building target: pract1a.elf'
+'Invoking: ARM Sourcery Windows GCC C Linker'
+arm-none-eabi-gcc -T"../ld_script.ld" -nostartfiles -Wl,-Map,pract1a.map -mcpu=arm7tdmi -g3 -gdwarf-2 -o "pract1a.elf"  ./prac1a.o   
+'Finished building target: pract1a.elf'
+' '
+'Invoking: ARM Sourcery Windows GNU Create Flash Image'
+arm-none-eabi-objcopy -O binary pract1a.elf  "pract1a.hex"
+'Finished building: pract1a.hex'
+' '
+'Invoking: ARM Sourcery Windows GNU Create Listing'
+arm-none-eabi-objdump -h -S pract1a.elf > "pract1a.lst"
+'Finished building: pract1a.lst'
+' '
+'Invoking: ARM Sourcery Windows GNU Print Size'
+arm-none-eabi-size  --format=berkeley pract1a.elf
+   text	   data	    bss	    dec	    hex	filename
+     56	      8	      4	     68	     44	pract1a.elf
+'Finished building: pract1a.siz'
+' '
+11:23:54 **** Build of configuration Debug for project pract1c ****
+cs-make all 
+'Building file: ../pract1c.asm'
+'Invoking: ARM Sourcery Windows GCC Assembler'
+arm-none-eabi-gcc -x assembler-with-cpp -Wall -Wa,-adhlns="pract1c.o.lst" -c -fmessage-length=0 -MMD -MP -MF"pract1c.d" -MT"pract1c.d" -mcpu=arm7tdmi -g3 -gdwarf-2 -o "pract1c.o" "../pract1c.asm"
+'Finished building: ../pract1c.asm'
+' '
+'Building target: pract1c.elf'
+'Invoking: ARM Sourcery Windows GCC C Linker'
+arm-none-eabi-gcc -T"../ld_script.ld" -nostartfiles -Wl,-Map,pract1c.map -mcpu=arm7tdmi -g3 -gdwarf-2 -o "pract1c.elf"  ./pract1c.o   
+'Finished building target: pract1c.elf'
+' '
+'Invoking: ARM Sourcery Windows GNU Create Flash Image'
+arm-none-eabi-objcopy -O binary pract1c.elf  "pract1c.hex"
+'Finished building: pract1c.hex'
+' '
+'Invoking: ARM Sourcery Windows GNU Create Listing'
+arm-none-eabi-objdump -h -S pract1c.elf > "pract1c.lst"
+'Finished building: pract1c.lst'
+' '
+'Invoking: ARM Sourcery Windows GNU Print Size'
+arm-none-eabi-size  --format=berkeley pract1c.elf
+   text	   data	    bss	    dec	    hex	filename
+    116	      8	      4	    128	     80	pract1c.elf
+'Finished building: pract1c.siz'
+' '
+11:26:15 **** Incremental Build of configuration Debug for project pract1c ****
+cs-make all 
+'Building file: ../pract1c.asm'
+'Invoking: ARM Sourcery Windows GCC Assembler'
+arm-none-eabi-gcc -x assembler-with-cpp -Wall -Wa,-adhlns="pract1c.o.lst" -c -fmessage-length=0 -MMD -MP -MF"pract1c.d" -MT"pract1c.d" -mcpu=arm7tdmi -g3 -gdwarf-2 -o "pract1c.o" "../pract1c.asm"
+'Finished building: ../pract1c.asm'
+' '
+'Building target: pract1c.elf'
+'Invoking: ARM Sourcery Windows GCC C Linker'
+arm-none-eabi-gcc -T"../ld_script.ld" -nostartfiles -Wl,-Map,pract1c.map -mcpu=arm7tdmi -g3 -gdwarf-2 -o "pract1c.elf"  ./pract1c.o   
+'Finished building target: pract1c.elf'
+' '
+'Invoking: ARM Sourcery Windows GNU Create Flash Image'
+arm-none-eabi-objcopy -O binary pract1c.elf  "pract1c.hex"
+'Finished building: pract1c.hex'
+' '
+'Invoking: ARM Sourcery Windows GNU Create Listing'
+arm-none-eabi-objdump -h -S pract1c.elf > "pract1c.lst"
+'Finished building: pract1c.lst'
+' '
+'Invoking: ARM Sourcery Windows GNU Print Size'
+arm-none-eabi-size  --format=berkeley pract1c.elf
+   text	   data	    bss	    dec	    hex	filename
+    116	      8	      4	    128	     80	pract1c.elf
+'Finished building: pract1c.siz'
+' '
+11:27:37 **** Incremental Build of configuration Debug for project pract1c ****
+cs-make all 
+'Building file: ../pract1c.asm'
+'Invoking: ARM Sourcery Windows GCC Assembler'
+arm-none-eabi-gcc -x assembler-with-cpp -Wall -Wa,-adhlns="pract1c.o.lst" -c -fmessage-length=0 -MMD -MP -MF"pract1c.d" -MT"pract1c.d" -mcpu=arm7tdmi -g3 -gdwarf-2 -o "pract1c.o" "../pract1c.asm"
+'Finished building: ../pract1c.asm'
+' '
+'Building target: pract1c.elf'
+'Invoking: ARM Sourcery Windows GCC C Linker'
+arm-none-eabi-gcc -T"../ld_script.ld" -nostartfiles -Wl,-Map,pract1c.map -mcpu=arm7tdmi -g3 -gdwarf-2 -o "pract1c.elf"  ./pract1c.o   
+'Finished building target: pract1c.elf'
+' '
+'Invoking: ARM Sourcery Windows GNU Create Flash Image'
+arm-none-eabi-objcopy -O binary pract1c.elf  "pract1c.hex"
+'Finished building: pract1c.hex'
+' '
+'Invoking: ARM Sourcery Windows GNU Create Listing'
+arm-none-eabi-objdump -h -S pract1c.elf > "pract1c.lst"
+'Finished building: pract1c.lst'
+' '
+'Invoking: ARM Sourcery Windows GNU Print Size'
+arm-none-eabi-size  --format=berkeley pract1c.elf
+   text	   data	    bss	    dec	    hex	filename
+    116	      8	      4	    128	     80	pract1c.elf
+'Finished building: pract1c.siz'
+' '
+11:34:42 **** Incremental Build of configuration Debug for project pract1c ****
+cs-make all 
+'Building file: ../pract1c.asm'
+'Invoking: ARM Sourcery Windows GCC Assembler'
+arm-none-eabi-gcc -x assembler-with-cpp -Wall -Wa,-adhlns="pract1c.o.lst" -c -fmessage-length=0 -MMD -MP -MF"pract1c.d" -MT"pract1c.d" -mcpu=arm7tdmi -g3 -gdwarf-2 -o "pract1c.o" "../pract1c.asm"
+../pract1c.asm: Assembler messages:
+../pract1c.asm:32: Error: constant expression expected -- `sub r2,#0,r2'
+../pract1c.asm:35: Error: constant expression expected -- `sub r3,#0,r3'
+cs-make: *** [pract1c.o] Error 1
+11:37:45 **** Incremental Build of configuration Debug for project pract1c ****
+cs-make all 
+'Building file: ../pract1c.asm'
+'Invoking: ARM Sourcery Windows GCC Assembler'
+arm-none-eabi-gcc -x assembler-with-cpp -Wall -Wa,-adhlns="pract1c.o.lst" -c -fmessage-length=0 -MMD -MP -MF"pract1c.d" -MT"pract1c.d" -mcpu=arm7tdmi -g3 -gdwarf-2 -o "pract1c.o" "../pract1c.asm"
+../pract1c.asm: Assembler messages:
+../pract1c.asm:37: Error: bad instruction `lt 0-A'
+../pract1c.asm:44: Error: ARM register expected -- `cmp 0-r2'
+../pract1c.asm:47: Error: ARM register expected -- `cmp 0-B'
+../pract1c.asm:50: Error: ARM register expected -- `cmp 0-r3'
+cs-make: *** [pract1c.o] Error 1
+11:39:37 **** Incremental Build of configuration Debug for project pract1c ****
+cs-make all 
+'Building file: ../pract1c.asm'
+'Invoking: ARM Sourcery Windows GCC Assembler'
+arm-none-eabi-gcc -x assembler-with-cpp -Wall -Wa,-adhlns="pract1c.o.lst" -c -fmessage-length=0 -MMD -MP -MF"pract1c.d" -MT"pract1c.d" -mcpu=arm7tdmi -g3 -gdwarf-2 -o "pract1c.o" "../pract1c.asm"
+'Finished building: ../pract1c.asm'
+' '
+'Building target: pract1c.elf'
+'Invoking: ARM Sourcery Windows GCC C Linker'
+arm-none-eabi-gcc -T"../ld_script.ld" -nostartfiles -Wl,-Map,pract1c.map -mcpu=arm7tdmi -g3 -gdwarf-2 -o "pract1c.elf"  ./pract1c.o   
+'Finished building target: pract1c.elf'
+' '
+'Invoking: ARM Sourcery Windows GNU Create Flash Image'
+arm-none-eabi-objcopy -O binary pract1c.elf  "pract1c.hex"
+'Finished building: pract1c.hex'
+' '
+'Invoking: ARM Sourcery Windows GNU Create Listing'
+arm-none-eabi-objdump -h -S pract1c.elf > "pract1c.lst"
+'Finished building: pract1c.lst'
+' '
+'Invoking: ARM Sourcery Windows GNU Print Size'
+arm-none-eabi-size  --format=berkeley pract1c.elf
+   text	   data	    bss	    dec	    hex	filename
+    112	      8	      4	    124	     7c	pract1c.elf
+'Finished building: pract1c.siz'
+' '
+11:41:38 **** Incremental Build of configuration Debug for project pract1c ****
+cs-make all 
+'Building file: ../pract1c.asm'
+'Invoking: ARM Sourcery Windows GCC Assembler'
+arm-none-eabi-gcc -x assembler-with-cpp -Wall -Wa,-adhlns="pract1c.o.lst" -c -fmessage-length=0 -MMD -MP -MF"pract1c.d" -MT"pract1c.d" -mcpu=arm7tdmi -g3 -gdwarf-2 -o "pract1c.o" "../pract1c.asm"
+'Finished building: ../pract1c.asm'
+' '
+'Building target: pract1c.elf'
+'Invoking: ARM Sourcery Windows GCC C Linker'
+arm-none-eabi-gcc -T"../ld_script.ld" -nostartfiles -Wl,-Map,pract1c.map -mcpu=arm7tdmi -g3 -gdwarf-2 -o "pract1c.elf"  ./pract1c.o   
+'Finished building target: pract1c.elf'
+' '
+'Invoking: ARM Sourcery Windows GNU Create Flash Image'
+arm-none-eabi-objcopy -O binary pract1c.elf  "pract1c.hex"
+'Finished building: pract1c.hex'
+' '
+'Invoking: ARM Sourcery Windows GNU Create Listing'
+arm-none-eabi-objdump -h -S pract1c.elf > "pract1c.lst"
+'Finished building: pract1c.lst'
+' '
+'Invoking: ARM Sourcery Windows GNU Print Size'
+arm-none-eabi-size  --format=berkeley pract1c.elf
+   text	   data	    bss	    dec	    hex	filename
+    112	      8	      4	    124	     7c	pract1c.elf
+'Finished building: pract1c.siz'
+' '
+16:05:53 **** Incremental Build of configuration Debug for project pract1c ****
+cs-make all 
+'Building file: ../pract1c.asm'
+'Invoking: ARM Sourcery Windows GCC Assembler'
+arm-none-eabi-gcc -x assembler-with-cpp -Wall -Wa,-adhlns="pract1c.o.lst" -c -fmessage-length=0 -MMD -MP -MF"pract1c.d" -MT"pract1c.d" -mcpu=arm7tdmi -g3 -gdwarf-2 -o "pract1c.o" "../pract1c.asm"
+'Finished building: ../pract1c.asm'
+' '
+'Building target: pract1c.elf'
+'Invoking: ARM Sourcery Windows GCC C Linker'
+arm-none-eabi-gcc -T"../ld_script.ld" -nostartfiles -Wl,-Map,pract1c.map -mcpu=arm7tdmi -g3 -gdwarf-2 -o "pract1c.elf"  ./pract1c.o   
+'Finished building target: pract1c.elf'
+' '
+'Invoking: ARM Sourcery Windows GNU Create Flash Image'
+arm-none-eabi-objcopy -O binary pract1c.elf  "pract1c.hex"
+'Finished building: pract1c.hex'
+' '
+'Invoking: ARM Sourcery Windows GNU Create Listing'
+arm-none-eabi-objdump -h -S pract1c.elf > "pract1c.lst"
+'Finished building: pract1c.lst'
+' '
+'Invoking: ARM Sourcery Windows GNU Print Size'
+arm-none-eabi-size  --format=berkeley pract1c.elf
+   text	   data	    bss	    dec	    hex	filename
+    100	      8	      4	    112	     70	pract1c.elf
+'Finished building: pract1c.siz'
+' '
+16:06:47 **** Incremental Build of configuration Debug for project pract1c ****
+cs-make all 
+'Building file: ../pract1c.asm'
+'Invoking: ARM Sourcery Windows GCC Assembler'
+arm-none-eabi-gcc -x assembler-with-cpp -Wall -Wa,-adhlns="pract1c.o.lst" -c -fmessage-length=0 -MMD -MP -MF"pract1c.d" -MT"pract1c.d" -mcpu=arm7tdmi -g3 -gdwarf-2 -o "pract1c.o" "../pract1c.asm"
+'Finished building: ../pract1c.asm'
+' '
+'Building target: pract1c.elf'
+'Invoking: ARM Sourcery Windows GCC C Linker'
+arm-none-eabi-gcc -T"../ld_script.ld" -nostartfiles -Wl,-Map,pract1c.map -mcpu=arm7tdmi -g3 -gdwarf-2 -o "pract1c.elf"  ./pract1c.o   
+'Finished building target: pract1c.elf'
+' '
+'Invoking: ARM Sourcery Windows GNU Create Flash Image'
+arm-none-eabi-objcopy -O binary pract1c.elf  "pract1c.hex"
+'Finished building: pract1c.hex'
+' '
+'Invoking: ARM Sourcery Windows GNU Create Listing'
+arm-none-eabi-objdump -h -S pract1c.elf > "pract1c.lst"
+'Finished building: pract1c.lst'
+' '
+'Invoking: ARM Sourcery Windows GNU Print Size'
+arm-none-eabi-size  --format=berkeley pract1c.elf
+   text	   data	    bss	    dec	    hex	filename
+    100	      8	      4	    112	     70	pract1c.elf
+'Finished building: pract1c.siz'
+' '
+16:10:21 **** Incremental Build of configuration Debug for project pract1c ****
+cs-make all 
+'Building file: ../pract1c.asm'
+'Invoking: ARM Sourcery Windows GCC Assembler'
+arm-none-eabi-gcc -x assembler-with-cpp -Wall -Wa,-adhlns="pract1c.o.lst" -c -fmessage-length=0 -MMD -MP -MF"pract1c.d" -MT"pract1c.d" -mcpu=arm7tdmi -g3 -gdwarf-2 -o "pract1c.o" "../pract1c.asm"
+'Finished building: ../pract1c.asm'
+' '
+'Building target: pract1c.elf'
+'Invoking: ARM Sourcery Windows GCC C Linker'
+arm-none-eabi-gcc -T"../ld_script.ld" -nostartfiles -Wl,-Map,pract1c.map -mcpu=arm7tdmi -g3 -gdwarf-2 -o "pract1c.elf"  ./pract1c.o   
+'Finished building target: pract1c.elf'
+' '
+'Invoking: ARM Sourcery Windows GNU Create Flash Image'
+arm-none-eabi-objcopy -O binary pract1c.elf  "pract1c.hex"
+'Finished building: pract1c.hex'
+' '
+'Invoking: ARM Sourcery Windows GNU Create Listing'
+arm-none-eabi-objdump -h -S pract1c.elf > "pract1c.lst"
+'Finished building: pract1c.lst'
+' '
+'Invoking: ARM Sourcery Windows GNU Print Size'
+arm-none-eabi-size  --format=berkeley pract1c.elf
+   text	   data	    bss	    dec	    hex	filename
+     88	      8	      4	    100	     64	pract1c.elf
+'Finished building: pract1c.siz'
+' '
+16:21:27 **** Incremental Build of configuration Debug for project pract1c ****
+cs-make all 
+'Building file: ../pract1c.asm'
+'Invoking: ARM Sourcery Windows GCC Assembler'
+arm-none-eabi-gcc -x assembler-with-cpp -Wall -Wa,-adhlns="pract1c.o.lst" -c -fmessage-length=0 -MMD -MP -MF"pract1c.d" -MT"pract1c.d" -mcpu=arm7tdmi -g3 -gdwarf-2 -o "pract1c.o" "../pract1c.asm"
+../pract1c.asm: Assembler messages:
+../pract1c.asm:17: Error: bad instruction `global start'
+cs-make: *** [pract1c.o] Error 1
+16:21:47 **** Incremental Build of configuration Debug for project pract1c ****
+cs-make all 
+'Building file: ../pract1c.asm'
+'Invoking: ARM Sourcery Windows GCC Assembler'
+arm-none-eabi-gcc -x assembler-with-cpp -Wall -Wa,-adhlns="pract1c.o.lst" -c -fmessage-length=0 -MMD -MP -MF"pract1c.d" -MT"pract1c.d" -mcpu=arm7tdmi -g3 -gdwarf-2 -o "pract1c.o" "../pract1c.asm"
+'Finished building: ../pract1c.asm'
+' '
+'Building target: pract1c.elf'
+'Invoking: ARM Sourcery Windows GCC C Linker'
+arm-none-eabi-gcc -T"../ld_script.ld" -nostartfiles -Wl,-Map,pract1c.map -mcpu=arm7tdmi -g3 -gdwarf-2 -o "pract1c.elf"  ./pract1c.o   
+'Finished building target: pract1c.elf'
+' '
+'Invoking: ARM Sourcery Windows GNU Create Flash Image'
+arm-none-eabi-objcopy -O binary pract1c.elf  "pract1c.hex"
+'Finished building: pract1c.hex'
+' '
+'Invoking: ARM Sourcery Windows GNU Create Listing'
+arm-none-eabi-objdump -h -S pract1c.elf > "pract1c.lst"
+'Finished building: pract1c.lst'
+' '
+'Invoking: ARM Sourcery Windows GNU Print Size'
+arm-none-eabi-size  --format=berkeley pract1c.elf
+   text	   data	    bss	    dec	    hex	filename
+     68	      8	      4	     80	     50	pract1c.elf
+'Finished building: pract1c.siz'
+' '
+16:29:04 **** Incremental Build of configuration Debug for project pract1c ****
+cs-make all 
+'Building file: ../pract1c.asm'
+'Invoking: ARM Sourcery Windows GCC Assembler'
+arm-none-eabi-gcc -x assembler-with-cpp -Wall -Wa,-adhlns="pract1c.o.lst" -c -fmessage-length=0 -MMD -MP -MF"pract1c.d" -MT"pract1c.d" -mcpu=arm7tdmi -g3 -gdwarf-2 -o "pract1c.o" "../pract1c.asm"
+'Finished building: ../pract1c.asm'
+' '
+'Building target: pract1c.elf'
+'Invoking: ARM Sourcery Windows GCC C Linker'
+arm-none-eabi-gcc -T"../ld_script.ld" -nostartfiles -Wl,-Map,pract1c.map -mcpu=arm7tdmi -g3 -gdwarf-2 -o "pract1c.elf"  ./pract1c.o   
+'Finished building target: pract1c.elf'
+' '
+'Invoking: ARM Sourcery Windows GNU Create Flash Image'
+arm-none-eabi-objcopy -O binary pract1c.elf  "pract1c.hex"
+'Finished building: pract1c.hex'
+' '
+'Invoking: ARM Sourcery Windows GNU Create Listing'
+arm-none-eabi-objdump -h -S pract1c.elf > "pract1c.lst"
+'Finished building: pract1c.lst'
+' '
+'Invoking: ARM Sourcery Windows GNU Print Size'
+arm-none-eabi-size  --format=berkeley pract1c.elf
+   text	   data	    bss	    dec	    hex	filename
+    120	      8	      4	    132	     84	pract1c.elf
+'Finished building: pract1c.siz'
+' '
+16:37:50 **** Incremental Build of configuration Debug for project pract1c ****
+cs-make all 
+'Building file: ../pract1c.asm'
+'Invoking: ARM Sourcery Windows GCC Assembler'
+arm-none-eabi-gcc -x assembler-with-cpp -Wall -Wa,-adhlns="pract1c.o.lst" -c -fmessage-length=0 -MMD -MP -MF"pract1c.d" -MT"pract1c.d" -mcpu=arm7tdmi -g3 -gdwarf-2 -o "pract1c.o" "../pract1c.asm"
+'Finished building: ../pract1c.asm'
+' '
+'Building target: pract1c.elf'
+'Invoking: ARM Sourcery Windows GCC C Linker'
+arm-none-eabi-gcc -T"../ld_script.ld" -nostartfiles -Wl,-Map,pract1c.map -mcpu=arm7tdmi -g3 -gdwarf-2 -o "pract1c.elf"  ./pract1c.o   
+'Finished building target: pract1c.elf'
+' '
+'Invoking: ARM Sourcery Windows GNU Create Flash Image'
+arm-none-eabi-objcopy -O binary pract1c.elf  "pract1c.hex"
+'Finished building: pract1c.hex'
+' '
+'Invoking: ARM Sourcery Windows GNU Create Listing'
+arm-none-eabi-objdump -h -S pract1c.elf > "pract1c.lst"
+'Finished building: pract1c.lst'
+' '
+'Invoking: ARM Sourcery Windows GNU Print Size'
+arm-none-eabi-size  --format=berkeley pract1c.elf
+   text	   data	    bss	    dec	    hex	filename
+     92	      8	      4	    104	     68	pract1c.elf
+'Finished building: pract1c.siz'
+' '
+16:39:22 **** Incremental Build of configuration Debug for project pract1c ****
+cs-make all 
+'Building file: ../pract1c.asm'
+'Invoking: ARM Sourcery Windows GCC Assembler'
+arm-none-eabi-gcc -x assembler-with-cpp -Wall -Wa,-adhlns="pract1c.o.lst" -c -fmessage-length=0 -MMD -MP -MF"pract1c.d" -MT"pract1c.d" -mcpu=arm7tdmi -g3 -gdwarf-2 -o "pract1c.o" "../pract1c.asm"
+'Finished building: ../pract1c.asm'
+' '
+'Building target: pract1c.elf'
+'Invoking: ARM Sourcery Windows GCC C Linker'
+arm-none-eabi-gcc -T"../ld_script.ld" -nostartfiles -Wl,-Map,pract1c.map -mcpu=arm7tdmi -g3 -gdwarf-2 -o "pract1c.elf"  ./pract1c.o   
+'Finished building target: pract1c.elf'
+' '
+'Invoking: ARM Sourcery Windows GNU Create Flash Image'
+arm-none-eabi-objcopy -O binary pract1c.elf  "pract1c.hex"
+'Finished building: pract1c.hex'
+' '
+'Invoking: ARM Sourcery Windows GNU Create Listing'
+arm-none-eabi-objdump -h -S pract1c.elf > "pract1c.lst"
+'Finished building: pract1c.lst'
+' '
+'Invoking: ARM Sourcery Windows GNU Print Size'
+arm-none-eabi-size  --format=berkeley pract1c.elf
+   text	   data	    bss	    dec	    hex	filename
+     92	      8	      4	    104	     68	pract1c.elf
+'Finished building: pract1c.siz'
+' '
+16:52:14 **** Incremental Build of configuration Debug for project pract1c ****
+cs-make all 
+'Building file: ../pract1c.asm'
+'Invoking: ARM Sourcery Windows GCC Assembler'
+arm-none-eabi-gcc -x assembler-with-cpp -Wall -Wa,-adhlns="pract1c.o.lst" -c -fmessage-length=0 -MMD -MP -MF"pract1c.d" -MT"pract1c.d" -mcpu=arm7tdmi -g3 -gdwarf-2 -o "pract1c.o" "../pract1c.asm"
+'Finished building: ../pract1c.asm'
+' '
+'Building target: pract1c.elf'
+'Invoking: ARM Sourcery Windows GCC C Linker'
+arm-none-eabi-gcc -T"../ld_script.ld" -nostartfiles -Wl,-Map,pract1c.map -mcpu=arm7tdmi -g3 -gdwarf-2 -o "pract1c.elf"  ./pract1c.o   
+'Finished building target: pract1c.elf'
+' '
+'Invoking: ARM Sourcery Windows GNU Create Flash Image'
+arm-none-eabi-objcopy -O binary pract1c.elf  "pract1c.hex"
+'Finished building: pract1c.hex'
+' '
+'Invoking: ARM Sourcery Windows GNU Create Listing'
+arm-none-eabi-objdump -h -S pract1c.elf > "pract1c.lst"
+'Finished building: pract1c.lst'
+' '
+'Invoking: ARM Sourcery Windows GNU Print Size'
+arm-none-eabi-size  --format=berkeley pract1c.elf
+   text	   data	    bss	    dec	    hex	filename
+     92	      8	      4	    104	     68	pract1c.elf
+'Finished building: pract1c.siz'
+' '
+09:08:37 **** Build of configuration Debug for project pract2b ****
+cs-make all 
+'Building file: ../pract2b.asm'
+'Invoking: ARM Sourcery Windows GCC Assembler'
+arm-none-eabi-gcc -x assembler-with-cpp -Wall -Wa,-adhlns="pract2b.o.lst" -c -fmessage-length=0 -MMD -MP -MF"pract2b.d" -MT"pract2b.d" -mcpu=arm7tdmi -g3 -gdwarf-2 -o "pract2b.o" "../pract2b.asm"
+'Finished building: ../pract2b.asm'
+' '
+'Building target: pract2b.elf'
+'Invoking: ARM Sourcery Windows GCC C Linker'
+arm-none-eabi-gcc -T"../ld_script.ld" -nostartfiles -Wl,-Map,pract2b.map -mcpu=arm7tdmi -g3 -gdwarf-2 -o "pract2b.elf"  ./pract2b.o   
+'Finished building target: pract2b.elf'
+' '
+'Invoking: ARM Sourcery Windows GNU Create Flash Image'
+arm-none-eabi-objcopy -O binary pract2b.elf  "pract2b.hex"
+'Finished building: pract2b.hex'
+' '
+'Invoking: ARM Sourcery Windows GNU Create Listing'
+arm-none-eabi-objdump -h -S pract2b.elf > "pract2b.lst"
+'Finished building: pract2b.lst'
+' '
+'Invoking: ARM Sourcery Windows GNU Print Size'
+arm-none-eabi-size  --format=berkeley pract2b.elf
+   text	   data	    bss	    dec	    hex	filename
+    140	     32	     40	    212	     d4	pract2b.elf
+'Finished building: pract2b.siz'
+' '
+18:33:47 **** Incremental Build of configuration Debug for project pract2b ****
+cs-make all 
+'Building file: ../pract2b.asm'
+'Invoking: ARM Sourcery Windows GCC Assembler'
+arm-none-eabi-gcc -x assembler-with-cpp -Wall -Wa,-adhlns="pract2b.o.lst" -c -fmessage-length=0 -MMD -MP -MF"pract2b.d" -MT"pract2b.d" -mcpu=arm7tdmi -g3 -gdwarf-2 -o "pract2b.o" "../pract2b.asm"
+'Finished building: ../pract2b.asm'
+' '
+'Building target: pract2b.elf'
+'Invoking: ARM Sourcery Windows GCC C Linker'
+arm-none-eabi-gcc -T"../ld_script.ld" -nostartfiles -Wl,-Map,pract2b.map -mcpu=arm7tdmi -g3 -gdwarf-2 -o "pract2b.elf"  ./pract2b.o   
+'Finished building target: pract2b.elf'
+' '
+'Invoking: ARM Sourcery Windows GNU Create Flash Image'
+arm-none-eabi-objcopy -O binary pract2b.elf  "pract2b.hex"
+'Finished building: pract2b.hex'
+' '
+'Invoking: ARM Sourcery Windows GNU Create Listing'
+arm-none-eabi-objdump -h -S pract2b.elf > "pract2b.lst"
+'Finished building: pract2b.lst'
+' '
+'Invoking: ARM Sourcery Windows GNU Print Size'
+arm-none-eabi-size  --format=berkeley pract2b.elf
+   text	   data	    bss	    dec	    hex	filename
+      0	     36	     40	     76	     4c	pract2b.elf
+'Finished building: pract2b.siz'
+' '
+18:40:24 **** Build of configuration Debug for project pract1a ****
+cs-make all 
+'Building file: ../prac1a.asm'
+'Invoking: ARM Sourcery Windows GCC Assembler'
+arm-none-eabi-gcc -x assembler-with-cpp -Wall -Wa,-adhlns="prac1a.o.lst" -c -fmessage-length=0 -MMD -MP -MF"prac1a.d" -MT"prac1a.d" -mcpu=arm7tdmi -g3 -gdwarf-2 -o "prac1a.o" "../prac1a.asm"
+'Finished building: ../prac1a.asm'
+' '
+'Building target: pract1a.elf'
+'Invoking: ARM Sourcery Windows GCC C Linker'
+arm-none-eabi-gcc -T"../ld_script.ld" -nostartfiles -Wl,-Map,pract1a.map -mcpu=arm7tdmi -g3 -gdwarf-2 -o "pract1a.elf"  ./prac1a.o   
+'Finished building target: pract1a.elf'
+' '
+'Invoking: ARM Sourcery Windows GNU Create Flash Image'
+arm-none-eabi-objcopy -O binary pract1a.elf  "pract1a.hex"
+'Finished building: pract1a.hex'
+' '
+'Invoking: ARM Sourcery Windows GNU Create Listing'
+arm-none-eabi-objdump -h -S pract1a.elf > "pract1a.lst"
+'Finished building: pract1a.lst'
+' '
+'Invoking: ARM Sourcery Windows GNU Print Size'
+arm-none-eabi-size  --format=berkeley pract1a.elf
+   text	   data	    bss	    dec	    hex	filename
+     56	     12	      4	     72	     48	pract1a.elf
+'Finished building: pract1a.siz'
+' '
+18:47:47 **** Incremental Build of configuration Debug for project pract1a ****
+cs-make all 
+'Building file: ../prac1a.asm'
+'Invoking: ARM Sourcery Windows GCC Assembler'
+arm-none-eabi-gcc -x assembler-with-cpp -Wall -Wa,-adhlns="prac1a.o.lst" -c -fmessage-length=0 -MMD -MP -MF"prac1a.d" -MT"prac1a.d" -mcpu=arm7tdmi -g3 -gdwarf-2 -o "prac1a.o" "../prac1a.asm"
+../prac1a.asm: Assembler messages:
+../prac1a.asm:22: Warning: value 0x3cf truncated to 0xcf
+../prac1a.asm:22: Error: junk at end of line, first unrecognized character is `c'
+cs-make: *** [prac1a.o] Error 1
+18:50:08 **** Incremental Build of configuration Debug for project pract1a ****
+cs-make all 
+'Building file: ../prac1a.asm'
+'Invoking: ARM Sourcery Windows GCC Assembler'
+arm-none-eabi-gcc -x assembler-with-cpp -Wall -Wa,-adhlns="prac1a.o.lst" -c -fmessage-length=0 -MMD -MP -MF"prac1a.d" -MT"prac1a.d" -mcpu=arm7tdmi -g3 -gdwarf-2 -o "prac1a.o" "../prac1a.asm"
+'Finished building: ../prac1a.asm'
+' '
+'Building target: pract1a.elf'
+'Invoking: ARM Sourcery Windows GCC C Linker'
+arm-none-eabi-gcc -T"../ld_script.ld" -nostartfiles -Wl,-Map,pract1a.map -mcpu=arm7tdmi -g3 -gdwarf-2 -o "pract1a.elf"  ./prac1a.o   
+'Finished building target: pract1a.elf'
+' '
+'Invoking: ARM Sourcery Windows GNU Create Flash Image'
+arm-none-eabi-objcopy -O binary pract1a.elf  "pract1a.hex"
+'Finished building: pract1a.hex'
+' '
+'Invoking: ARM Sourcery Windows GNU Create Listing'
+arm-none-eabi-objdump -h -S pract1a.elf > "pract1a.lst"
+'Finished building: pract1a.lst'
+' '
+'Invoking: ARM Sourcery Windows GNU Print Size'
+arm-none-eabi-size  --format=berkeley pract1a.elf
+   text	   data	    bss	    dec	    hex	filename
+     56	     12	      4	     72	     48	pract1a.elf
+'Finished building: pract1a.siz'
+' '
+18:50:28 **** Incremental Build of configuration Debug for project pract1a ****
+cs-make all 
+'Invoking: ARM Sourcery Windows GNU Print Size'
+arm-none-eabi-size  --format=berkeley pract1a.elf
+   text	   data	    bss	    dec	    hex	filename
+     56	     12	      4	     72	     48	pract1a.elf
+'Finished building: pract1a.siz'
+' '
+12:30:46 **** Build of configuration Debug for project pract2b ****
+cs-make all 
+'Building file: ../pract2b.asm'
+'Invoking: ARM Sourcery Windows GCC Assembler'
+arm-none-eabi-gcc -x assembler-with-cpp -Wall -Wa,-adhlns="pract2b.o.lst" -c -fmessage-length=0 -MMD -MP -MF"pract2b.d" -MT"pract2b.d" -mcpu=arm7tdmi -g3 -gdwarf-2 -o "pract2b.o" "../pract2b.asm"
+'Finished building: ../pract2b.asm'
+' '
+'Building target: pract2b.elf'
+'Invoking: ARM Sourcery Windows GCC C Linker'
+arm-none-eabi-gcc -T"../ld_script.ld" -nostartfiles -Wl,-Map,pract2b.map -mcpu=arm7tdmi -g3 -gdwarf-2 -o "pract2b.elf"  ./pract2b.o   
+'Finished building target: pract2b.elf'
+' '
+'Invoking: ARM Sourcery Windows GNU Create Flash Image'
+arm-none-eabi-objcopy -O binary pract2b.elf  "pract2b.hex"
+'Finished building: pract2b.hex'
+' '
+'Invoking: ARM Sourcery Windows GNU Create Listing'
+arm-none-eabi-objdump -h -S pract2b.elf > "pract2b.lst"
+'Finished building: pract2b.lst'
+' '
+'Invoking: ARM Sourcery Windows GNU Print Size'
+arm-none-eabi-size  --format=berkeley pract2b.elf
+   text	   data	    bss	    dec	    hex	filename
+    132	     32	     40	    204	     cc	pract2b.elf
+'Finished building: pract2b.siz'
+' '
+12:35:05 **** Incremental Build of configuration Debug for project pract2b ****
+cs-make all 
+'Building file: ../pract2b.asm'
+'Invoking: ARM Sourcery Windows GCC Assembler'
+arm-none-eabi-gcc -x assembler-with-cpp -Wall -Wa,-adhlns="pract2b.o.lst" -c -fmessage-length=0 -MMD -MP -MF"pract2b.d" -MT"pract2b.d" -mcpu=arm7tdmi -g3 -gdwarf-2 -o "pract2b.o" "../pract2b.asm"
+'Finished building: ../pract2b.asm'
+' '
+'Building target: pract2b.elf'
+'Invoking: ARM Sourcery Windows GCC C Linker'
+arm-none-eabi-gcc -T"../ld_script.ld" -nostartfiles -Wl,-Map,pract2b.map -mcpu=arm7tdmi -g3 -gdwarf-2 -o "pract2b.elf"  ./pract2b.o   
+'Finished building target: pract2b.elf'
+' '
+'Invoking: ARM Sourcery Windows GNU Create Flash Image'
+arm-none-eabi-objcopy -O binary pract2b.elf  "pract2b.hex"
+'Finished building: pract2b.hex'
+' '
+'Invoking: ARM Sourcery Windows GNU Create Listing'
+arm-none-eabi-objdump -h -S pract2b.elf > "pract2b.lst"
+'Finished building: pract2b.lst'
+' '
+'Invoking: ARM Sourcery Windows GNU Print Size'
+arm-none-eabi-size  --format=berkeley pract2b.elf
+   text	   data	    bss	    dec	    hex	filename
+    124	     32	     40	    196	     c4	pract2b.elf
+'Finished building: pract2b.siz'
+' '
+12:42:03 **** Incremental Build of configuration Debug for project pract2b ****
+cs-make all 
+'Building file: ../pract2b.asm'
+'Invoking: ARM Sourcery Windows GCC Assembler'
+arm-none-eabi-gcc -x assembler-with-cpp -Wall -Wa,-adhlns="pract2b.o.lst" -c -fmessage-length=0 -MMD -MP -MF"pract2b.d" -MT"pract2b.d" -mcpu=arm7tdmi -g3 -gdwarf-2 -o "pract2b.o" "../pract2b.asm"
+'Finished building: ../pract2b.asm'
+' '
+'Building target: pract2b.elf'
+'Invoking: ARM Sourcery Windows GCC C Linker'
+arm-none-eabi-gcc -T"../ld_script.ld" -nostartfiles -Wl,-Map,pract2b.map -mcpu=arm7tdmi -g3 -gdwarf-2 -o "pract2b.elf"  ./pract2b.o   
+'Finished building target: pract2b.elf'
+' '
+'Invoking: ARM Sourcery Windows GNU Create Flash Image'
+arm-none-eabi-objcopy -O binary pract2b.elf  "pract2b.hex"
+'Finished building: pract2b.hex'
+' '
+'Invoking: ARM Sourcery Windows GNU Create Listing'
+arm-none-eabi-objdump -h -S pract2b.elf > "pract2b.lst"
+'Finished building: pract2b.lst'
+' '
+'Invoking: ARM Sourcery Windows GNU Print Size'
+arm-none-eabi-size  --format=berkeley pract2b.elf
+   text	   data	    bss	    dec	    hex	filename
+    128	     32	     40	    200	     c8	pract2b.elf
+'Finished building: pract2b.siz'
+' '
+13:01:12 **** Incremental Build of configuration Debug for project pract2b ****
+cs-make all 
+'Building file: ../pract2b.asm'
+'Invoking: ARM Sourcery Windows GCC Assembler'
+arm-none-eabi-gcc -x assembler-with-cpp -Wall -Wa,-adhlns="pract2b.o.lst" -c -fmessage-length=0 -MMD -MP -MF"pract2b.d" -MT"pract2b.d" -mcpu=arm7tdmi -g3 -gdwarf-2 -o "pract2b.o" "../pract2b.asm"
+'Finished building: ../pract2b.asm'
+' '
+'Building target: pract2b.elf'
+'Invoking: ARM Sourcery Windows GCC C Linker'
+arm-none-eabi-gcc -T"../ld_script.ld" -nostartfiles -Wl,-Map,pract2b.map -mcpu=arm7tdmi -g3 -gdwarf-2 -o "pract2b.elf"  ./pract2b.o   
+'Finished building target: pract2b.elf'
+' '
+'Invoking: ARM Sourcery Windows GNU Create Flash Image'
+arm-none-eabi-objcopy -O binary pract2b.elf  "pract2b.hex"
+'Finished building: pract2b.hex'
+' '
+'Invoking: ARM Sourcery Windows GNU Create Listing'
+arm-none-eabi-objdump -h -S pract2b.elf > "pract2b.lst"
+'Finished building: pract2b.lst'
+' '
+'Invoking: ARM Sourcery Windows GNU Print Size'
+arm-none-eabi-size  --format=berkeley pract2b.elf
+   text	   data	    bss	    dec	    hex	filename
+    128	     32	     40	    200	     c8	pract2b.elf
+'Finished building: pract2b.siz'
+' '
+13:04:45 **** Incremental Build of configuration Debug for project pract2b ****
+cs-make all 
+'Building file: ../pract2b.asm'
+'Invoking: ARM Sourcery Windows GCC Assembler'
+arm-none-eabi-gcc -x assembler-with-cpp -Wall -Wa,-adhlns="pract2b.o.lst" -c -fmessage-length=0 -MMD -MP -MF"pract2b.d" -MT"pract2b.d" -mcpu=arm7tdmi -g3 -gdwarf-2 -o "pract2b.o" "../pract2b.asm"
+'Finished building: ../pract2b.asm'
+' '
+'Building target: pract2b.elf'
+'Invoking: ARM Sourcery Windows GCC C Linker'
+arm-none-eabi-gcc -T"../ld_script.ld" -nostartfiles -Wl,-Map,pract2b.map -mcpu=arm7tdmi -g3 -gdwarf-2 -o "pract2b.elf"  ./pract2b.o   
+'Finished building target: pract2b.elf'
+' '
+'Invoking: ARM Sourcery Windows GNU Create Flash Image'
+arm-none-eabi-objcopy -O binary pract2b.elf  "pract2b.hex"
+'Finished building: pract2b.hex'
+' '
+'Invoking: ARM Sourcery Windows GNU Create Listing'
+arm-none-eabi-objdump -h -S pract2b.elf > "pract2b.lst"
+'Finished building: pract2b.lst'
+' '
+'Invoking: ARM Sourcery Windows GNU Print Size'
+arm-none-eabi-size  --format=berkeley pract2b.elf
+   text	   data	    bss	    dec	    hex	filename
+     84	     32	     40	    156	     9c	pract2b.elf
+'Finished building: pract2b.siz'
+' '
+13:54:48 **** Build of configuration Debug for project pract3b ****
+cs-make all 
+'Building file: ../pract3b.asm'
+'Invoking: ARM Sourcery Windows GCC Assembler'
+arm-none-eabi-gcc -x assembler-with-cpp -Wall -Wa,-adhlns="pract3b.o.lst" -c -fmessage-length=0 -MMD -MP -MF"pract3b.d" -MT"pract3b.d" -mcpu=arm7tdmi -g3 -gdwarf-2 -o "pract3b.o" "../pract3b.asm"
+'Finished building: ../pract3b.asm'
+' '
+'Building target: pract3b.elf'
+'Invoking: ARM Sourcery Windows GCC C Linker'
+arm-none-eabi-gcc -T"../ld_script.ld" -nostartfiles -Wl,-Map,pract3b.map -mcpu=arm7tdmi -g3 -gdwarf-2 -o "pract3b.elf"  ./pract3b.o   
+./pract3b.o: In function `end_for':
+C:\Pendrive_FC_2015\Students\FC_English\pract3b\Debug/../pract3b.asm:84: undefined reference to `max'
+collect2: ld returned 1 exit status
+cs-make: *** [pract3b.elf] Error 1
+13:59:53 **** Incremental Build of configuration Debug for project pract3b ****
+cs-make all 
+'Building file: ../pract3b.asm'
+'Invoking: ARM Sourcery Windows GCC Assembler'
+arm-none-eabi-gcc -x assembler-with-cpp -Wall -Wa,-adhlns="pract3b.o.lst" -c -fmessage-length=0 -MMD -MP -MF"pract3b.d" -MT"pract3b.d" -mcpu=arm7tdmi -g3 -gdwarf-2 -o "pract3b.o" "../pract3b.asm"
+'Finished building: ../pract3b.asm'
+' '
+'Building target: pract3b.elf'
+'Invoking: ARM Sourcery Windows GCC C Linker'
+arm-none-eabi-gcc -T"../ld_script.ld" -nostartfiles -Wl,-Map,pract3b.map -mcpu=arm7tdmi -g3 -gdwarf-2 -o "pract3b.elf"  ./pract3b.o   
+'Finished building target: pract3b.elf'
+' '
+'Invoking: ARM Sourcery Windows GNU Create Flash Image'
+arm-none-eabi-objcopy -O binary pract3b.elf  "pract3b.hex"
+'Finished building: pract3b.hex'
+' '
+'Invoking: ARM Sourcery Windows GNU Create Listing'
+arm-none-eabi-objdump -h -S pract3b.elf > "pract3b.lst"
+'Finished building: pract3b.lst'
+' '
+'Invoking: ARM Sourcery Windows GNU Print Size'
+arm-none-eabi-size  --format=berkeley pract3b.elf
+   text	   data	    bss	    dec	    hex	filename
+    188	     32	     40	    260	    104	pract3b.elf
+'Finished building: pract3b.siz'
+' '
+14:05:14 **** Incremental Build of configuration Debug for project pract3b ****
+cs-make all 
+'Building file: ../pract3b.asm'
+'Invoking: ARM Sourcery Windows GCC Assembler'
+arm-none-eabi-gcc -x assembler-with-cpp -Wall -Wa,-adhlns="pract3b.o.lst" -c -fmessage-length=0 -MMD -MP -MF"pract3b.d" -MT"pract3b.d" -mcpu=arm7tdmi -g3 -gdwarf-2 -o "pract3b.o" "../pract3b.asm"
+'Finished building: ../pract3b.asm'
+' '
+'Building target: pract3b.elf'
+'Invoking: ARM Sourcery Windows GCC C Linker'
+arm-none-eabi-gcc -T"../ld_script.ld" -nostartfiles -Wl,-Map,pract3b.map -mcpu=arm7tdmi -g3 -gdwarf-2 -o "pract3b.elf"  ./pract3b.o   
+'Finished building target: pract3b.elf'
+' '
+'Invoking: ARM Sourcery Windows GNU Create Flash Image'
+arm-none-eabi-objcopy -O binary pract3b.elf  "pract3b.hex"
+'Finished building: pract3b.hex'
+' '
+'Invoking: ARM Sourcery Windows GNU Create Listing'
+arm-none-eabi-objdump -h -S pract3b.elf > "pract3b.lst"
+'Finished building: pract3b.lst'
+' '
+'Invoking: ARM Sourcery Windows GNU Print Size'
+arm-none-eabi-size  --format=berkeley pract3b.elf
+   text	   data	    bss	    dec	    hex	filename
+    148	     32	     36	    216	     d8	pract3b.elf
+'Finished building: pract3b.siz'
+' '
+11:21:16 **** Build of configuration Debug for project pract1a ****
+cs-make all 
+'Building file: ../prac1a.asm'
+'Invoking: ARM Sourcery Windows GCC Assembler'
+arm-none-eabi-gcc -x assembler-with-cpp -Wall -Wa,-adhlns="prac1a.o.lst" -c -fmessage-length=0 -MMD -MP -MF"prac1a.d" -MT"prac1a.d" -mcpu=arm7tdmi -g3 -gdwarf-2 -o "prac1a.o" "../prac1a.asm"
+'Finished building: ../prac1a.asm'
+' '
+'Building target: pract1a.elf'
+'Invoking: ARM Sourcery Windows GCC C Linker'
+arm-none-eabi-gcc -T"../ld_script.ld" -nostartfiles -Wl,-Map,pract1a.map -mcpu=arm7tdmi -g3 -gdwarf-2 -o "pract1a.elf"  ./prac1a.o   
+'Finished building target: pract1a.elf'
+' '
+'Invoking: ARM Sourcery Windows GNU Create Flash Image'
+arm-none-eabi-objcopy -O binary pract1a.elf  "pract1a.hex"
+'Finished building: pract1a.hex'
+' '
+'Invoking: ARM Sourcery Windows GNU Create Listing'
+arm-none-eabi-objdump -h -S pract1a.elf > "pract1a.lst"
+'Finished building: pract1a.lst'
+' '
+'Invoking: ARM Sourcery Windows GNU Print Size'
+arm-none-eabi-size  --format=berkeley pract1a.elf
+   text	   data	    bss	    dec	    hex	filename
+     56	      8	      4	     68	     44	pract1a.elf
+'Finished building: pract1a.siz'
+' '
+11:21:33 **** Incremental Build of configuration Debug for project pract1a ****
+cs-make all 
+'Building file: ../prac1a.asm'
+'Invoking: ARM Sourcery Windows GCC Assembler'
+arm-none-eabi-gcc -x assembler-with-cpp -Wall -Wa,-adhlns="prac1a.o.lst" -c -fmessage-length=0 -MMD -MP -MF"prac1a.d" -MT"prac1a.d" -mcpu=arm7tdmi -g3 -gdwarf-2 -o "prac1a.o" "../prac1a.asm"
+'Finished building: ../prac1a.asm'
+' '
+'Building target: pract1a.elf'
+'Invoking: ARM Sourcery Windows GCC C Linker'
+arm-none-eabi-gcc -T"../ld_script.ld" -nostartfiles -Wl,-Map,pract1a.map -mcpu=arm7tdmi -g3 -gdwarf-2 -o "pract1a.elf"  ./prac1a.o   
+'Finished building target: pract1a.elf'
+' '
+'Invoking: ARM Sourcery Windows GNU Create Flash Image'
+arm-none-eabi-objcopy -O binary pract1a.elf  "pract1a.hex"
+'Finished building: pract1a.hex'
+' '
+'Invoking: ARM Sourcery Windows GNU Create Listing'
+arm-none-eabi-objdump -h -S pract1a.elf > "pract1a.lst"
+'Finished building: pract1a.lst'
+' '
+'Invoking: ARM Sourcery Windows GNU Print Size'
+arm-none-eabi-size  --format=berkeley pract1a.elf
+   text	   data	    bss	    dec	    hex	filename
+     56	      8	      4	     68	     44	pract1a.elf
+'Finished building: pract1a.siz'
+' '
+11:33:12 **** Build of configuration Debug for project pract1c ****
+cs-make all 
+'Building file: ../pract1c.asm'
+'Invoking: ARM Sourcery Windows GCC Assembler'
+arm-none-eabi-gcc -x assembler-with-cpp -Wall -Wa,-adhlns="pract1c.o.lst" -c -fmessage-length=0 -MMD -MP -MF"pract1c.d" -MT"pract1c.d" -mcpu=arm7tdmi -g3 -gdwarf-2 -o "pract1c.o" "../pract1c.asm"
+'Finished building: ../pract1c.asm'
+' '
+'Building target: pract1c.elf'
+'Invoking: ARM Sourcery Windows GCC C Linker'
+arm-none-eabi-gcc -T"../ld_script.ld" -nostartfiles -Wl,-Map,pract1c.map -mcpu=arm7tdmi -g3 -gdwarf-2 -o "pract1c.elf"  ./pract1c.o   
+'Finished building target: pract1c.elf'
+' '
+'Invoking: ARM Sourcery Windows GNU Create Flash Image'
+arm-none-eabi-objcopy -O binary pract1c.elf  "pract1c.hex"
+'Finished building: pract1c.hex'
+' '
+'Invoking: ARM Sourcery Windows GNU Create Listing'
+arm-none-eabi-objdump -h -S pract1c.elf > "pract1c.lst"
+'Finished building: pract1c.lst'
+' '
+'Invoking: ARM Sourcery Windows GNU Print Size'
+arm-none-eabi-size  --format=berkeley pract1c.elf
+   text	   data	    bss	    dec	    hex	filename
+     92	      8	      4	    104	     68	pract1c.elf
+'Finished building: pract1c.siz'
+' '
+11:43:36 **** Incremental Build of configuration Debug for project pract1a ****
+cs-make all 
+'Building file: ../prac1a.asm'
+'Invoking: ARM Sourcery Windows GCC Assembler'
+arm-none-eabi-gcc -x assembler-with-cpp -Wall -Wa,-adhlns="prac1a.o.lst" -c -fmessage-length=0 -MMD -MP -MF"prac1a.d" -MT"prac1a.d" -mcpu=arm7tdmi -g3 -gdwarf-2 -o "prac1a.o" "../prac1a.asm"
+'Finished building: ../prac1a.asm'
+' '
+'Building target: pract1a.elf'
+'Invoking: ARM Sourcery Windows GCC C Linker'
+arm-none-eabi-gcc -T"../ld_script.ld" -nostartfiles -Wl,-Map,pract1a.map -mcpu=arm7tdmi -g3 -gdwarf-2 -o "pract1a.elf"  ./prac1a.o   
+'Finished building target: pract1a.elf'
+' '
+'Invoking: ARM Sourcery Windows GNU Create Flash Image'
+arm-none-eabi-objcopy -O binary pract1a.elf  "pract1a.hex"
+'Finished building: pract1a.hex'
+' '
+'Invoking: ARM Sourcery Windows GNU Create Listing'
+arm-none-eabi-objdump -h -S pract1a.elf > "pract1a.lst"
+'Finished building: pract1a.lst'
+' '
+'Invoking: ARM Sourcery Windows GNU Print Size'
+arm-none-eabi-size  --format=berkeley pract1a.elf
+   text	   data	    bss	    dec	    hex	filename
+     56	      8	      4	     68	     44	pract1a.elf
+'Finished building: pract1a.siz'
+' '
+11:43:49 **** Incremental Build of configuration Debug for project pract1a ****
+cs-make all 
+'Invoking: ARM Sourcery Windows GNU Print Size'
+arm-none-eabi-size  --format=berkeley pract1a.elf
+   text	   data	    bss	    dec	    hex	filename
+     56	      8	      4	     68	     44	pract1a.elf
+'Finished building: pract1a.siz'
+' '
+11:43:54 **** Incremental Build of configuration Debug for project pract1a ****
+cs-make all 
+'Invoking: ARM Sourcery Windows GNU Print Size'
+arm-none-eabi-size  --format=berkeley pract1a.elf
+   text	   data	    bss	    dec	    hex	filename
+     56	      8	      4	     68	     44	pract1a.elf
+'Finished building: pract1a.siz'
+' '
+11:57:52 **** Incremental Build of configuration Debug for project pract1a ****
+cs-make all 
+'Building target: pract1a.elf'
+'Invoking: ARM Sourcery Windows GCC C Linker'
+arm-none-eabi-gcc -T"../ld_script.ld" -nostartfiles -Wl,-Map,pract1a.map -mcpu=arm7tdmi -g3 -gdwarf-2 -o "pract1a.elf"  ./prac1a.o   
+'Finished building target: pract1a.elf'
+' '
+'Invoking: ARM Sourcery Windows GNU Create Flash Image'
+arm-none-eabi-objcopy -O binary pract1a.elf  "pract1a.hex"
+'Finished building: pract1a.hex'
+' '
+'Invoking: ARM Sourcery Windows GNU Create Listing'
+arm-none-eabi-objdump -h -S pract1a.elf > "pract1a.lst"
+'Finished building: pract1a.lst'
+' '
+'Invoking: ARM Sourcery Windows GNU Print Size'
+arm-none-eabi-size  --format=berkeley pract1a.elf
+   text	   data	    bss	    dec	    hex	filename
+     56	      8	      4	     68	     44	pract1a.elf
+'Finished building: pract1a.siz'
+' '
+16:48:56 **** Build of configuration Debug for project pract1b ****
+cs-make all 
+'Building file: ../pract1b.asm'
+'Invoking: ARM Sourcery Windows GCC Assembler'
+arm-none-eabi-gcc -x assembler-with-cpp -Wall -Wa,-adhlns="pract1b.o.lst" -c -fmessage-length=0 -MMD -MP -MF"pract1b.d" -MT"pract1b.d" -mcpu=arm7tdmi -g3 -gdwarf-2 -o "pract1b.o" "../pract1b.asm"
+../pract1b.asm: Assembler messages:
+../pract1b.asm:28: Error: internal_relocation (type: OFFSET_IMM) not fixed up
+../pract1b.asm:29: Error: internal_relocation (type: OFFSET_IMM) not fixed up
+cs-make: *** [pract1b.o] Error 1
+16:50:58 **** Incremental Build of configuration Debug for project pract1b ****
+cs-make all 
+'Building file: ../pract1b.asm'
+'Invoking: ARM Sourcery Windows GCC Assembler'
+arm-none-eabi-gcc -x assembler-with-cpp -Wall -Wa,-adhlns="pract1b.o.lst" -c -fmessage-length=0 -MMD -MP -MF"pract1b.d" -MT"pract1b.d" -mcpu=arm7tdmi -g3 -gdwarf-2 -o "pract1b.o" "../pract1b.asm"
+../pract1b.asm: Assembler messages:
+../pract1b.asm:28: Error: internal_relocation (type: OFFSET_IMM) not fixed up
+../pract1b.asm:29: Error: internal_relocation (type: OFFSET_IMM) not fixed up
+cs-make: *** [pract1b.o] Error 1
+16:53:26 **** Incremental Build of configuration Debug for project pract1b ****
+cs-make all 
+'Building file: ../pract1b.asm'
+'Invoking: ARM Sourcery Windows GCC Assembler'
+arm-none-eabi-gcc -x assembler-with-cpp -Wall -Wa,-adhlns="pract1b.o.lst" -c -fmessage-length=0 -MMD -MP -MF"pract1b.d" -MT"pract1b.d" -mcpu=arm7tdmi -g3 -gdwarf-2 -o "pract1b.o" "../pract1b.asm"
+../pract1b.asm: Assembler messages:
+../pract1b.asm:28: Error: internal_relocation (type: OFFSET_IMM) not fixed up
+../pract1b.asm:29: Error: internal_relocation (type: OFFSET_IMM) not fixed up
+cs-make: *** [pract1b.o] Error 1
+16:54:51 **** Incremental Build of configuration Debug for project pract1b ****
+cs-make all 
+'Building file: ../pract1b.asm'
+'Invoking: ARM Sourcery Windows GCC Assembler'
+arm-none-eabi-gcc -x assembler-with-cpp -Wall -Wa,-adhlns="pract1b.o.lst" -c -fmessage-length=0 -MMD -MP -MF"pract1b.d" -MT"pract1b.d" -mcpu=arm7tdmi -g3 -gdwarf-2 -o "pract1b.o" "../pract1b.asm"
+../pract1b.asm: Assembler messages:
+../pract1b.asm:28: Error: internal_relocation (type: OFFSET_IMM) not fixed up
+../pract1b.asm:29: Error: internal_relocation (type: OFFSET_IMM) not fixed up
+cs-make: *** [pract1b.o] Error 1
+16:55:44 **** Incremental Build of configuration Debug for project pract1b ****
+cs-make all 
+'Building file: ../pract1b.asm'
+'Invoking: ARM Sourcery Windows GCC Assembler'
+arm-none-eabi-gcc -x assembler-with-cpp -Wall -Wa,-adhlns="pract1b.o.lst" -c -fmessage-length=0 -MMD -MP -MF"pract1b.d" -MT"pract1b.d" -mcpu=arm7tdmi -g3 -gdwarf-2 -o "pract1b.o" "../pract1b.asm"
+../pract1b.asm: Assembler messages:
+../pract1b.asm:28: Error: internal_relocation (type: OFFSET_IMM) not fixed up
+../pract1b.asm:29: Error: internal_relocation (type: OFFSET_IMM) not fixed up
+cs-make: *** [pract1b.o] Error 1
+16:57:34 **** Incremental Build of configuration Debug for project pract1b ****
+cs-make all 
+'Building file: ../pract1b.asm'
+'Invoking: ARM Sourcery Windows GCC Assembler'
+arm-none-eabi-gcc -x assembler-with-cpp -Wall -Wa,-adhlns="pract1b.o.lst" -c -fmessage-length=0 -MMD -MP -MF"pract1b.d" -MT"pract1b.d" -mcpu=arm7tdmi -g3 -gdwarf-2 -o "pract1b.o" "../pract1b.asm"
+../pract1b.asm: Assembler messages:
+../pract1b.asm:28: Error: internal_relocation (type: OFFSET_IMM) not fixed up
+../pract1b.asm:29: Error: internal_relocation (type: OFFSET_IMM) not fixed up
+cs-make: *** [pract1b.o] Error 1
+16:58:19 **** Incremental Build of configuration Debug for project pract1b ****
+cs-make all 
+'Building file: ../pract1b.asm'
+'Invoking: ARM Sourcery Windows GCC Assembler'
+arm-none-eabi-gcc -x assembler-with-cpp -Wall -Wa,-adhlns="pract1b.o.lst" -c -fmessage-length=0 -MMD -MP -MF"pract1b.d" -MT"pract1b.d" -mcpu=arm7tdmi -g3 -gdwarf-2 -o "pract1b.o" "../pract1b.asm"
+../pract1b.asm: Assembler messages:
+../pract1b.asm:28: Error: internal_relocation (type: OFFSET_IMM) not fixed up
+../pract1b.asm:29: Error: internal_relocation (type: OFFSET_IMM) not fixed up
+cs-make: *** [pract1b.o] Error 1
+16:59:08 **** Incremental Build of configuration Debug for project pract1b ****
+cs-make all 
+'Building file: ../pract1b.asm'
+'Invoking: ARM Sourcery Windows GCC Assembler'
+arm-none-eabi-gcc -x assembler-with-cpp -Wall -Wa,-adhlns="pract1b.o.lst" -c -fmessage-length=0 -MMD -MP -MF"pract1b.d" -MT"pract1b.d" -mcpu=arm7tdmi -g3 -gdwarf-2 -o "pract1b.o" "../pract1b.asm"
+'Finished building: ../pract1b.asm'
+' '
+'Building target: pract1b.elf'
+'Invoking: ARM Sourcery Windows GCC C Linker'
+arm-none-eabi-gcc -T"../ld_script.ld" -nostartfiles -Wl,-Map,pract1b.map -mcpu=arm7tdmi -g3 -gdwarf-2 -o "pract1b.elf"  ./pract1b.o   
+'Finished building target: pract1b.elf'
+' '
+'Invoking: ARM Sourcery Windows GNU Create Flash Image'
+arm-none-eabi-objcopy -O binary pract1b.elf  "pract1b.hex"
+'Finished building: pract1b.hex'
+' '
+'Invoking: ARM Sourcery Windows GNU Create Listing'
+arm-none-eabi-objdump -h -S pract1b.elf > "pract1b.lst"
+'Finished building: pract1b.lst'
+' '
+'Invoking: ARM Sourcery Windows GNU Print Size'
+arm-none-eabi-size  --format=berkeley pract1b.elf
+   text	   data	    bss	    dec	    hex	filename
+     64	      8	      4	     76	     4c	pract1b.elf
+'Finished building: pract1b.siz'
+' '
+17:03:05 **** Incremental Build of configuration Debug for project pract1b ****
+cs-make all 
+'Building file: ../pract1b.asm'
+'Invoking: ARM Sourcery Windows GCC Assembler'
+arm-none-eabi-gcc -x assembler-with-cpp -Wall -Wa,-adhlns="pract1b.o.lst" -c -fmessage-length=0 -MMD -MP -MF"pract1b.d" -MT"pract1b.d" -mcpu=arm7tdmi -g3 -gdwarf-2 -o "pract1b.o" "../pract1b.asm"
+'Finished building: ../pract1b.asm'
+' '
+'Building target: pract1b.elf'
+'Invoking: ARM Sourcery Windows GCC C Linker'
+arm-none-eabi-gcc -T"../ld_script.ld" -nostartfiles -Wl,-Map,pract1b.map -mcpu=arm7tdmi -g3 -gdwarf-2 -o "pract1b.elf"  ./pract1b.o   
+'Finished building target: pract1b.elf'
+' '
+'Invoking: ARM Sourcery Windows GNU Create Flash Image'
+arm-none-eabi-objcopy -O binary pract1b.elf  "pract1b.hex"
+'Finished building: pract1b.hex'
+' '
+'Invoking: ARM Sourcery Windows GNU Create Listing'
+arm-none-eabi-objdump -h -S pract1b.elf > "pract1b.lst"
+'Finished building: pract1b.lst'
+' '
+'Invoking: ARM Sourcery Windows GNU Print Size'
+arm-none-eabi-size  --format=berkeley pract1b.elf
+   text	   data	    bss	    dec	    hex	filename
+     64	      8	      4	     76	     4c	pract1b.elf
+'Finished building: pract1b.siz'
+' '

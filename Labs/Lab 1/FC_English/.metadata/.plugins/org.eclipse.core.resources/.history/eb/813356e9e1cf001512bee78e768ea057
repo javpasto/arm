@@ -1,0 +1,86 @@
+
+pract1c.elf:     file format elf32-littlearm
+
+Sections:
+Idx Name          Size      VMA       LMA       File off  Algn
+  0 .data         00000008  0c000000  0c000000  00008000  2**0
+                  CONTENTS, ALLOC, LOAD, DATA
+  1 .bss          00000004  0c000008  0c000008  00008008  2**0
+                  ALLOC
+  2 .text         0000005c  0c00000c  0c00000c  0000800c  2**2
+                  CONTENTS, ALLOC, LOAD, READONLY, CODE
+  3 .ARM.attributes 00000022  00000000  00000000  00008068  2**0
+                  CONTENTS, READONLY
+  4 .debug_line   00000051  00000000  00000000  0000808a  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  5 .debug_info   0000006e  00000000  00000000  000080db  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  6 .debug_abbrev 00000014  00000000  00000000  00008149  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  7 .debug_aranges 00000020  00000000  00000000  00008160  2**3
+                  CONTENTS, READONLY, DEBUGGING
+
+Disassembly of section .text:
+
+0c00000c <start>:
+
+.bss
+C:		.space 4
+
+.text
+start:	LDR	R3, =A			@ R3 <---- Adress of A
+ c00000c:	e59f3048 	ldr	r3, [pc, #72]	; c00005c <end_w+0xc>
+		LDR	R1, [R3]		@ R1 <---- Value of A
+ c000010:	e5931000 	ldr	r1, [r3]
+		LDR	R3, =B			@ R3 <---- Adress of B
+ c000014:	e59f3044 	ldr	r3, [pc, #68]	; c000060 <end_w+0x10>
+		LDR	R2, [R3]		@ R2 <---- Value of B
+ c000018:	e5932000 	ldr	r2, [r3]
+		MOV R4, #0			@ R4 <---- Initialize the quotient to 0
+ c00001c:	e3a04000 	mov	r4, #0
+
+		MOV	R5, #0			@ Initialize an auxiliary register to compute the opposite when needed
+ c000020:	e3a05000 	mov	r5, #0
+
+		CMP	R1, #0			@ If A < 0, then convert it to positive
+ c000024:	e3510000 	cmp	r1, #0
+		BGE	check_B
+ c000028:	aa000000 	bge	c000030 <check_B>
+		SUB	R1, R5, R1		@ A = 0 - A (to obtain the opposite value)
+ c00002c:	e0451001 	sub	r1, r5, r1
+
+0c000030 <check_B>:
+
+check_B:
+		CMP R2, #0			@ If B < 0, then convert it to positive
+ c000030:	e3520000 	cmp	r2, #0
+		BGE	while
+ c000034:	aa000000 	bge	c00003c <while>
+		SUB	R2, R5, R2		@ B = 0 - B (to obtain the opposite value)
+ c000038:	e0452002 	sub	r2, r5, r2
+
+0c00003c <while>:
+
+while:
+  		CMP	R1, R2			@ If A<B go to end_w
+ c00003c:	e1510002 	cmp	r1, r2
+		BLE	end_w
+ c000040:	da000002 	ble	c000050 <end_w>
+		SUB R1, R1, R2		@ Compute A = A - B
+ c000044:	e0411002 	sub	r1, r1, r2
+		ADD R4, R4, #1		@ Compute C = C + 1
+ c000048:	e2844001 	add	r4, r4, #1
+		B	while
+ c00004c:	eafffffa 	b	c00003c <while>
+
+0c000050 <end_w>:
+
+end_w:	LDR 	R3, =C
+ c000050:	e59f300c 	ldr	r3, [pc, #12]	; c000064 <end_w+0x14>
+		STR 	R4, [R3]		@ Save the quotient of C
+ c000054:	e5834000 	str	r4, [r3]
+		b	.
+ c000058:	eafffffe 	b	c000058 <end_w+0x8>
+ c00005c:	0c000000 	.word	0x0c000000
+ c000060:	0c000004 	.word	0x0c000004
+ c000064:	0c000008 	.word	0x0c000008

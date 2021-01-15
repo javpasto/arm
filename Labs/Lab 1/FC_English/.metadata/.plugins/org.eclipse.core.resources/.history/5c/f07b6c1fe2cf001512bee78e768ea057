@@ -1,0 +1,54 @@
+/*-----------------------------------------------------------------
+**
+**  File:
+**    pract1c.asm  4/02/2016
+**
+**    Introduction to Computers
+**    Dpto. de Arquitectura de Computadores y Automática
+**    Facultad de Informática. Universidad Complutense de Madrid
+**
+**  Goal:
+**    xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+**
+**  Design notes: C = |A| / |B|
+**
+**---------------------------------------------------------------*/
+
+.global start
+
+.data
+A: 		.word -86
+B: 		.word -8
+
+.bss
+C:		.space 4
+
+.text
+start:	LDR	R3, =A			@ R3 <---- Adress of A
+		LDR	R1, [R3]		@ R1 <---- Value of A
+		LDR	R3, =B			@ R3 <---- Adress of B
+		LDR	R2, [R3]		@ R2 <---- Value of B
+		MOV R4, #0			@ R4 <---- Initialize the quotient to 0
+
+		MOV	R5, #0			@ Initialize an auxiliary register to compute the opposite when needed
+
+		CMP	R1, #0			@ If A < 0, then convert it to positive
+		BGE	check_B
+		SUB	R1, R5, R1		@ A = 0 - A (to obtain the opposite value)
+
+check_B:
+		CMP R2, #0			@ If B < 0, then convert it to positive
+		BGE	while
+		SUB	R2, R5, R2		@ B = 0 - B (to obtain the opposite value)
+
+while:
+  		CMP	R1, R2			@ If A<B go to end_w
+		BLE	end_w
+		SUB R1, R1, R2		@ Compute A = A - B
+		ADD R4, R4, #1		@ Compute C = C + 1
+		B	while
+
+end_w:	LDR 	R3, =C
+		STR 	R4, [R3]		@ Save the quotient of C
+		b	.
+		.end

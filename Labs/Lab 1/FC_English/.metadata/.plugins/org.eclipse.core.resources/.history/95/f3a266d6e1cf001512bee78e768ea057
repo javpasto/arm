@@ -1,0 +1,57 @@
+   1              	# 1 "../prac1a.asm"
+   1              	/*-----------------------------------------------------------------
+   0              	
+   0              	
+   0              	
+   2              	**
+   3              	**  File:
+   4              	**    pract1a.asm  4/02/2016
+   5              	**
+   6              	**    Introduction to Computers
+   7              	**    Dpto. de Arquitectura de Computadores y Automática
+   8              	**    Facultad de Informática. Universidad Complutense de Madrid
+   9              	**
+  10              	**  Goal:
+  11              	**    Compare two numbers and save the largest one in the memory
+  12              	**
+  13              	**  Design notes:
+  14              	**
+  15              	**---------------------------------------------------------------*/
+  16              	
+  17              	
+  18              	.global  	start
+  19              	.data
+  20 0000 03000000 	X: 		.word	0x03
+  21 0004 0A000000 	Y: 		.word	0x0A
+  22              	
+  23              	.bss
+  24              	Largest:
+  25 0000 00000000 			.space 4
+  26              	.text
+  27 0000 24409FE5 	start:	LDR 	R4, =X			@ R4 <-- Address of X
+  28 0004 24309FE5 			LDR 	R3, =Y			@ R3 <-- Address of Y
+  29 0008 24509FE5 			LDR 	R5, =Largest	@ R5 <-- Address of Largest
+  30 000c 001094E5 			LDR 	R1, [R4]		@ R1 <-- Value of X
+  31 0010 002093E5 			LDR 	R2, [R3]		@ R2 <-- Value of Y
+  32 0014 020051E1 			CMP 	R1, R2			@ Compute R1-R2
+  33 0018 010000DA 			BLE 	else			@ IF R1 <= R2, go to else
+  34 001c 001085E5 			STR 	R1, [R5]		@ Largest <-- Value of R1
+  35 0020 000000EA 			B		Done			@ Go to Done
+  36 0024 002085E5 	else:	STR 	R2, [R5]		@ Largest <-- Value of R2
+  37 0028 FEFFFFEA 	Done: 	B 		.				@ Work done, infinite loop
+  38 002c 00000000 			.end
+  38      04000000 
+  38      00000000 
+DEFINED SYMBOLS
+       ../prac1a.asm:27     .text:00000000 start
+       ../prac1a.asm:20     .data:00000000 X
+       ../prac1a.asm:21     .data:00000004 Y
+       ../prac1a.asm:24     .bss:00000000 Largest
+       ../prac1a.asm:25     .bss:00000000 $d
+       ../prac1a.asm:27     .text:00000000 $a
+       ../prac1a.asm:36     .text:00000024 else
+       ../prac1a.asm:37     .text:00000028 Done
+       ../prac1a.asm:38     .text:0000002c $d
+                   .debug_aranges:0000000c $d
+
+NO UNDEFINED SYMBOLS
